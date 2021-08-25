@@ -4,6 +4,7 @@
 export const addItemToCart = (cartItems, cartItemToAdd) => {
     //will find the first item in the list of items whose ID matches the ID just added.
     //Save that value as existing cart item
+    //find() returns a boolean of true or false on the first element that returns true. It does not keep going once one element returns true.
     const existingCartItem = cartItems.find(
         cartItem => cartItem.id === cartItemToAdd.id
     );
